@@ -20,5 +20,8 @@
     "developer"
   ],
   "author": "Dan Elstone",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
