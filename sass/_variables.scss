@@ -1,0 +1,15 @@
+// Colours
+$brand-pink: #EBD8E1;
+$brand-light-pink: lighten($brand-pink, 8%);
+$brand-purple: #9D94BD;
+$brand-green: #48BAA2;
+$link-color: #2323FF;
+
+// Breakpoints
+$large: 960px;
+$medium: 600px;
+$small: 480px;
+
+// Media Query Variable
+$desktop-down: "only screen and (max-width: 960px)";
+$tablet-down: "only screen and (max-width: 600px)";
