@@ -56,5 +56,11 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+img,
+embed,
+object,
+video {
+	max-width: 100%;
+}
 
 /* end of reset */

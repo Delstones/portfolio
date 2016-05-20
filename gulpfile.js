@@ -15,7 +15,7 @@ gulp.task('sass', function () {
 			browsers: ['last 2 versions'],
 			cascade: false
 		}))
-    .pipe(cleanCSS())
+    .pipe(cleanCSS({keepBreaks:true}))
     .pipe(gulp.dest('./dist/css'));
 });
  
