@@ -5,9 +5,15 @@
 @import "_variables";
 @import "_flexslider";
 @import "_fonts";
+@import "_fontello";
 
-body {
-	background-color: grey;
+.blog {
+	display: flex;
+	flex-wrap: wrap;
 }
+
+
+
+
 
 
