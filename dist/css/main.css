@@ -1,5 +1,7 @@
 @charset "UTF-8";
 .flex-direction-nav a,.flex-direction-nav a:before{color:rgba(0,0,0,.8);text-shadow:1px 1px 0 rgba(255,255,255,.3)}
+@font-face{font-family:Inika;font-style:normal;font-weight:400;src:local('Inika'),url(http://fonts.gstatic.com/s/inika/v4/w2xGXhyHYlnSkd1wv6gDnQ.ttf) format('truetype')}
+@font-face{font-family:'Patua One';font-style:normal;font-weight:400;src:local('Patua One'),local('PatuaOne-Regular'),url(http://fonts.gstatic.com/s/patuaone/v6/yAXhog6uK3bd3OwBILv_SKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype')}
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}
 body{line-height:1;border-style:border-box}
@@ -52,8 +54,6 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (max-width:860px){.flex-direction-nav .flex-prev{opacity:1;left:10px}
 .flex-direction-nav .flex-next{opacity:1;right:10px}
 }
-@font-face{font-family:flexslider-icon;src:url(../../fonts/flexslider-icon.eot);src:url(../../fonts/flexslider-icon.eot?#iefix) format("embedded-opentype"),url(../../fonts/flexslider-icon.woff) format("woff"),url(../../fonts/flexslider-icon.ttf) format("truetype"),url(../../fonts/flexslider-icon.svg#flexslider-icon) format("svg");font-weight:400;font-style:normal}
-@font-face{font-family:fontello;src:url(../../fonts/fontello.eot?49775292);src:url(../../fonts/fontello.eot?49775292#iefix) format("embedded-opentype"),url(../../fonts/fontello.svg?49775292#fontello) format("svg");font-weight:400;font-style:normal}
 body{font:400 100% "Century Gothic",CenturyGothic,AppleGothic,sans-serif}
 a{transition:color .3s linear;color:#D53232;text-decoration:none}
 a:focus,a:hover,a:visited{color:#B52A2A}
