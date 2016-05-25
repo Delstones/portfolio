@@ -6,8 +6,20 @@
  * ====================================================================================================================*/
 
 body {
-	font: normal 100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font: normal 100% $lato;
+}
 
+h1,
+h2,
+h3,
+h4 {
+	font: bold 1.5em $monty;
+}
+
+header{
+		h1, h2 {
+		font: bold 100% $header-font;
+		}
 }
 
 a {
@@ -24,3 +36,5 @@ a:focus,
 a:visited {
 	color: #B52A2A;
 }
+
+

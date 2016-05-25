@@ -1,7 +1,14 @@
 @charset "UTF-8";
 .flex-direction-nav a,.flex-direction-nav a:before{color:rgba(0,0,0,.8);text-shadow:1px 1px 0 rgba(255,255,255,.3)}
-@font-face{font-family:Inika;font-style:normal;font-weight:400;src:local('Inika'),url(http://fonts.gstatic.com/s/inika/v4/w2xGXhyHYlnSkd1wv6gDnQ.ttf) format('truetype')}
-@font-face{font-family:'Patua One';font-style:normal;font-weight:400;src:local('Patua One'),local('PatuaOne-Regular'),url(http://fonts.gstatic.com/s/patuaone/v6/yAXhog6uK3bd3OwBILv_SKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype')}
+@font-face{font-family:Nunito;font-style:normal;font-weight:300;src:local('Nunito-Light'),url(https://fonts.gstatic.com/s/nunito/v7/1TiHc9yag0wq3lDO9cw0vqCWcynf_cDxXwCLxiixG1c.ttf) format('truetype')}
+@font-face{font-family:Nunito;font-style:normal;font-weight:400;src:local('Nunito-Regular'),url(https://fonts.gstatic.com/s/nunito/v7/kpI87QY2ce-mk2ZnKb-r0g.ttf) format('truetype')}
+@font-face{font-family:Nunito;font-style:normal;font-weight:700;src:local('Nunito-Bold'),url(https://fonts.gstatic.com/s/nunito/v7/TttUCfJ272GBgSKaOaD7KqCWcynf_cDxXwCLxiixG1c.ttf) format('truetype')}
+@font-face{font-family:Roboto;font-style:normal;font-weight:300;src:local('Roboto Light'),local('Roboto-Light'),url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfaCWcynf_cDxXwCLxiixG1c.ttf) format('truetype')}
+@font-face{font-family:Roboto;font-style:normal;font-weight:400;src:local('Roboto'),local('Roboto-Regular'),url(https://fonts.gstatic.com/s/roboto/v15/zN7GBFwfMP4uA6AR0HCoLQ.ttf) format('truetype')}
+@font-face{font-family:Roboto;font-style:normal;font-weight:700;src:local('Roboto Bold'),local('Roboto-Bold'),url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype')}
+@font-face{font-family:Montserrat;font-style:normal;font-weight:400;src:local('Montserrat-Regular'),url(https://fonts.gstatic.com/s/montserrat/v7/zhcz-_WihjSQC0oHJ9TCYC3USBnSvpkopQaUR-2r7iU.ttf) format('truetype')}
+@font-face{font-family:Montserrat;font-style:normal;font-weight:700;src:local('Montserrat-Bold'),url(https://fonts.gstatic.com/s/montserrat/v7/IQHow_FEYlDC4Gzy_m8fcvEr6Hm6RMS0v1dtXsGir4g.ttf) format('truetype')}
+@font-face{font-family:Lato;font-style:normal;font-weight:400;src:local('Lato Regular'),local('Lato-Regular'),url(https://fonts.gstatic.com/s/lato/v11/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format('truetype')}
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}
 body{line-height:1;border-style:border-box}
@@ -54,7 +61,9 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (max-width:860px){.flex-direction-nav .flex-prev{opacity:1;left:10px}
 .flex-direction-nav .flex-next{opacity:1;right:10px}
 }
-body{font:400 100% "Century Gothic",CenturyGothic,AppleGothic,sans-serif}
+body{font:400 100% Lato,Arial,"Helvetica Neue",Helvetica,sans-serif;background-color:#bfc0bf}
+h1,h2,h3,h4{font:700 1.5em Montserrat,Arial,"Helvetica Neue",Helvetica,sans-serif}
+header h1,header h2{font:700 100% Nunito,Arial,"Helvetica Neue",Helvetica,sans-serif}
 a{transition:color .3s linear;color:#D53232;text-decoration:none}
 a:focus,a:hover,a:visited{color:#B52A2A}
 @font-face{font-family:fontello;src:url(../../font/fontello.eot?81154746);src:url(../../font/fontello.eot?81154746#iefix) format("embedded-opentype"),url(../../font/fontello.svg?81154746#fontello) format("svg");font-weight:400;font-style:normal}
@@ -75,4 +84,9 @@ a:focus,a:hover,a:visited{color:#B52A2A}
 .icon-tumblr-squared:before{content:'\e814'}
 .icon-twitter-squared:before{content:'\e815'}
 .icon-linkedin-squared:before{content:'\e816'}
-.blog{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
+header{background-color:#90d5bf;padding:2%}
+header h1{font-size:13vw}
+header h2{font-size:5vw;margin-top:-15px;text-align:center}
+.main-navigation ul{display:-ms-flexbox;display:flex}
+.main-navigation li{-ms-flex:3;flex:3}
+.main-navigation .social{-ms-flex:1;flex:1}

@@ -1,29 +1,25 @@
 // _variables.scss
 // =================
 
-@import "http://fonts.googleapis.com/css?family=Patua+One|Inika";
- 
-$beige         : #E3C691;
-$darkGreenGold : #8D8862;
-$lightGreen    : #C0DC99;
-$green         : #507356;
-$lightBlue     : #97D5D9;
-$desatBlue     : #464B65;
-$purple        : #3E2B3D;
-$darkPurple    : #3A3248;
-$pink          : #CC8E94;
-$skin          : #B08B7B;
- 
-$headFont : 'Patua One', sans-serif;
-$bodyFont : 'Inika', serif;
+//FONTS
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+
+
+$header-font : 'Nunito', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$body-font   : 'Roboto', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$monty       : 'Montserrat', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$lato        : 'Lato', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+
 
 
 // Colours
-$brand-pink: #EBD8E1;
-$brand-light-pink: lighten($brand-pink, 8%);
-$brand-purple: #9D94BD;
-$brand-green: #48BAA2;
-$link-color: #2323FF;
+$seafoam  		  : #90d5bf;
+$background-grey  : #bfc0bf;
+$slider-bottom    : #282828;
 
 // Breakpoints
 $large: 960px;
@@ -31,5 +27,17 @@ $medium: 600px;
 $small: 480px;
 
 // Media Query Variable
-$desktop-down: "only screen and (max-width: 960px)";
-$tablet-down: "only screen and (max-width: 600px)";
+$desktop-up: "only screen and (max-width: 700px)";
+$tablet-up: "only screen and (max-width: 400px)";
+
+
+
+//		@media #{$tablet-up} {
+ // 	background-color: blue;
+//		}
+
+
+
+
+
+
