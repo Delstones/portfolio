@@ -7,6 +7,7 @@
 @import "_fonts";
 @import "_fontello";
 @import "_css3-mixins";
+@import "_align";
 
 /* ====================================================================================================================
  * GLOBAL STYLES
@@ -22,48 +23,121 @@
 
  header {
  	background-color: $seafoam;
- 	padding: 2%;
-
- 	h1 {
- 		font-size: 13vw;
- 	}
- 	h2 {
- 		font-size: 5vw;
- 		margin-top: -15px;
- 		text-align: center;
- 		
+ 	padding: 40px 2% 10px 2%;
+ 	box-shadow: 2px 5px 10px #888888;
+		h1 {
+ 			font-size: 13vw;
  		}
-}
+ 		h2 {
+ 			font-size: 5vw;
+ 			margin-top: -15px;
+ 			text-align: center;
+ 		}
+ }
 
 .main-navigation {
-	ul {
-	display: flex;
-	}
-	li {
-	flex: 3;
-	}
-	.social {
-	flex: 1;
-	}
-
-
-
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	right: 0;
+	width: 100%;
+	padding: 15px 1% 15px 3%;
+	background: $seafoam;
+		a {
+		   font-weight: bold;
+		   letter-spacing: 3px;
+		   padding: 5px;
+		}
+		ul {
+			display: flex;
+			aign-items: center;
+		}
+		li {
+			flex: 2;
+		}
+		.menu-text {
+			font-size: 1.2em;
+		}
+		.social {
+			flex: 1;
+		}
 }
 
+@media #{$phone-down} {
+.main-navigation {
+	padding: 7px 1% 3px 3%;
+	background: $seafoam;
+		a {
+		   font-weight: bold;
+		   letter-spacing: 3px;
+		   padding: 10px;
+		}
+		ul {
+			flex-wrap: wrap;
+		}
+		li {
+			flex: 1 1 33.3333333;
+		}
+		.menu-text {
+			font-size: 1.2em;
+		}
+		.social {
+			flex: 1 1 25%;
+			padding: 5px 0 7px 15px;
+			font-size: 1.2em;
+		}
 
-.main-navigation .social {
-	flex: 1;
+	}
+	header {
+ 		padding: 55px 2% 2% 2%;
+			h1 {
+ 				font-size: 13vw;
+ 			}
+ 			h2 {
+ 				font-size: 5vw;
+ 				margin-top: -15px;
+ 				text-align: center;
+ 			}
+ 	}
 }
-
-
-
- 
-
-
-
- /* ====================================================================================================================
+/* ====================================================================================================================
  * MAIN CONTENT STYLES
  * ====================================================================================================================*/
+
+main {
+	padding: 20px 2% 10px 2%;
+		h2{
+			font-size: 1.5em;
+			margin: 0 0 5px 5px;
+			text-align: center;
+		
+		}
+		h3{
+			font-size: 0.9em;
+			font-weight: normal;
+			margin: 0 0 10px 5px;
+			text-align: center;
+			}
+}
+
+.work {
+	background-color: blue;
+	padding: 10px 2% 1px 2%;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+
+.project-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	margin-bottom: 3px;
+		button {
+			border-radius: 10px;
+
+
+		}
+}
 
  /* ====================================================================================================================
  * FOOTER STYLES
