@@ -14,7 +14,7 @@
  * ====================================================================================================================*/
 
  body {
- 	background-color: $background-grey;
+ 	background-color: rgba(0,0,0,0.1);
  }
 
  /* ====================================================================================================================
@@ -22,16 +22,17 @@
  * ====================================================================================================================*/
 
  header {
- 	background-color: $seafoam;
- 	padding: 40px 2% 10px 2%;
+ 	background-color: #303435;
  	box-shadow: 2px 5px 10px #888888;
+ 	text-align: center;
+ 	padding: 60px 0 10px 0;
 		h1 {
- 			font-size: 13vw;
- 		}
+ 			font-size: 10vw;
+		}
  		h2 {
  			font-size: 5vw;
  			margin-top: -15px;
- 			text-align: center;
+ 			
  		}
  }
 
@@ -42,7 +43,10 @@
 	right: 0;
 	width: 100%;
 	padding: 15px 1% 15px 3%;
-	background: $seafoam;
+	background: #B6523F;
+	border-bottom: 1px solid #303435;
+	box-shadow: 0.1px 0.1px 10px black;
+
 		a {
 		   font-weight: bold;
 		   letter-spacing: 3px;
@@ -104,16 +108,16 @@
  * MAIN CONTENT STYLES
  * ====================================================================================================================*/
 
-main {
-	padding: 20px 2% 10px 2%;
+.main-content {
+	padding: 25px 2% 10px 2%;
 		h2{
-			font-size: 1.5em;
+			font-size: 1.9em;
 			margin: 0 0 5px 5px;
 			text-align: center;
 		
 		}
 		h3{
-			font-size: 0.9em;
+			font-size: 1.2em;
 			font-weight: normal;
 			margin: 0 0 10px 5px;
 			text-align: center;
@@ -121,17 +125,16 @@ main {
 }
 
 .work {
-	background-color: blue;
-	padding: 10px 2% 1px 2%;
+	padding: 0px 2% 1px 2%;
 	margin-bottom: 10px;
-	border-radius: 10px;
+	box-shadow: 2px 5px 10px #888888;
 }
 
 .project-header {
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
-	margin-bottom: 3px;
+	margin-bottom: 5px;
 		button {
 			border-radius: 10px;
 

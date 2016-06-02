@@ -9,16 +9,16 @@ body {
 	font: normal 100% $lato;
 }
 
-h1,
-h2,
 h3,
 h4 {
-	font: bold 100% $lato;
+	font: bold;
 }
 
 header{
 		h1, h2 {
 		font: bold 100% $header-font;
+        color: white;
+
 		}
 }
 
@@ -27,14 +27,29 @@ a {
 	-o-transition: color 0.3s linear;
 	-webkit-transition: color 0.3s linear;
 	transition: color 0.3s linear;
-	color: #D53232;
+	color: white;
 	text-decoration: none;
 }
 
-a:hover,
-a:focus,
-a:visited {
-	color: #B52A2A;
+a:hover {
+	color: red;
+}
+
+.btn-project {
+    margin: 1em 0 0;
+    padding: 0 10px 0 10px;
+    line-height: 2.3em;
+    font-size: 1em;
+    text-align: center;
+    color: #ffff;
+    background: #B6523F;
+    border: 0;
+    border-radius: .5em;
+    box-shadow: 0 0.125em 0 hsla(0,0%,0%,0.05);
+    -webkit-transition-property: color,background,border-color,margin-top;
+    -moz-transition-property: color,background,border-color,margin-top;
+    -o-transition-property: color,background,border-color,margin-top;
+    transition-property: color,background,border-color,margin-top;
 }
 
 
