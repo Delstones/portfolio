@@ -70,11 +70,10 @@
 @media #{$phone-down} {
 .main-navigation {
 	padding: 7px 1% 3px 3%;
-	background: $seafoam;
 		a {
 		   font-weight: bold;
-		   letter-spacing: 3px;
-		   padding: 10px;
+		   letter-spacing: 2px;
+		   padding: 5px;
 		}
 		ul {
 			flex-wrap: wrap;
@@ -83,7 +82,7 @@
 			flex: 1 1 33.3333333;
 		}
 		.menu-text {
-			font-size: 1.2em;
+			font-size: 1.3em;
 		}
 		.social {
 			flex: 1 1 25%;
@@ -93,7 +92,7 @@
 
 	}
 	header {
- 		padding: 55px 2% 2% 2%;
+ 		padding: 75px 2% 2% 2%;
 			h1 {
  				font-size: 13vw;
  			}
@@ -104,6 +103,8 @@
  			}
  	}
 }
+
+
 /* ====================================================================================================================
  * MAIN CONTENT STYLES
  * ====================================================================================================================*/
@@ -112,9 +113,11 @@
 	padding: 25px 2% 10px 2%;
 		h2{
 			font-size: 1.9em;
+			font-weight: bold;
+			margin-bottom: 5px;
 			margin: 0 0 5px 5px;
-			text-align: center;
-		
+			text-align: center;	
+			text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
 		}
 		h3{
 			font-size: 1.2em;
@@ -128,6 +131,7 @@
 	padding: 0px 2% 1px 2%;
 	margin-bottom: 10px;
 	box-shadow: 2px 5px 10px #888888;
+	background-color: rgba(0,0,0,0.05);
 }
 
 .project-header {
@@ -143,10 +147,52 @@
 }
 
  /* ====================================================================================================================
- * FOOTER STYLES
+ * VIEW PROJECT PAGE
  * ====================================================================================================================*/
 
+.project-header {
+	position: relative;
+		.computer {
+			position: relative; 
+			z-index: 10;
+			width: 100%
+		}
+		.phone {
+			position: absolute;
+			z-index: 100;
+			bottom: 0;
+			left: 4%;
+			width: 15%
+		}
+		.tablet {
+			position: absolute; 
+			z-index: 50;
+			right: 4%;
+			bottom: 0;
+			width: 35%;
+		}
+}
 
+.project-wrapper {
+	margin: 0 5% 0 5%;
+		h2 {
+			font-size: 2.0em;
+			margin-top: 20px;
+			text-align: left;
+		}
+		p {
+			margin-top: 15px;
+		}
+		ul {
+			font-size: 1.5em;
+			display: flex;
+			margin-top: 15px;
+		}
+		li {
+			background-color: grey;
+			padding: 10px;
+		}
+}
 
 
 
