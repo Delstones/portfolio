@@ -21,12 +21,13 @@
 		<!-- start of nav -->
 		<nav class = "main-navigation"> 
 			<ul>
-				<li><a href='#'>Work</a></li>
-				<li><a href='#'>Blog</a></li>
-				<li><a href='#'>Contact</a></li>
-				<li><a href='#'><i class="icon-tumblr-squared"></i></a></li>
-				<li><a href='#'><i class="icon-linkedin-squared"></i></a></li>
-				<li><a href='#'><i class="icon-instagram-1"></i></a></li>
+				<li class="menu-text"><a href='index.html'>WORK</a></li>
+				<li class="menu-text"><a href='blog.html'>BLOG</a></li>
+				<li class="menu-text"><a href='about.html'>ABOUT</a></li>
+				<li class="social"><a href='https://twitter.com/DanElstone'><i class="icon-twitter-squared"></i></a></li>
+				<li class="social"><a href='https://ca.linkedin.com/in/dan-elstone'><i class="icon-linkedin-squared"></i></a></li>
+				<li class="social"><a href='https://www.instagram.com/delstone/'><i class="icon-instagram-1"></i></a></li>
+				<li class="social"><a href="mailto:daniel.elstone@gmail.com"><i class="icon-mail"></i></a> </li>
 			</ul>
 		</nav> 
 	</header> 
@@ -36,44 +37,47 @@
 	
 		<!-- start of about -->
 		<section class="about">
-			<h2>About Me</h2>
-			<img src="./images/slide1.jpg" width="50%" height="50%" style="float:left;" />
-			
-			<!-- content right -->
-			<div class "content-right">
-				<p>Hi my name's Dan. I'm a <strong>Vancouver based front-end web developer</strong>. I recently completed the Tecnical Web Designer Program at B.C.I.T and now I'm on a search for work. If I'm not glued in front of a computer screen you might find me Rock Climbing in Squamish, or trying to care for a demanding Australian cattle dog, trying to learn Pink Floyd solos, or extremely slowly rebuilding my motorcycle...when I have time.</p>
-				<h3>Skills</h3>
-				<ul>
-					<li>Languages
-						<ul>
-							<li>HTML</li>
-							<li>CSS3</li>
-							<li>Javascript</li>
-							<li>jQuery</li>
-							<li>PHP</li>	
-						</ul>
-						</li>
-					<li>Adobe Suite
-						<ul>
-							<li>Indesign</li>
-							<li>Photoshop</li>
-							<li>Illustrator</li>
-							<li>Lightroom</li>	
-						</ul>
-						</li>
-					<li>Other Skills
-						<ul>
-							<li>Responsive Design</li>
-							<li>Gulp</li>
-							<li>SASS</li>
-							<li>SEO</li>
-							<li>Final Cut</li>	
-						</ul>
-						</li>
-				</ul>
-				<button>Request CV</button>
+			<article>
+				<h2>About Me</h2>
+				<img src="images/me.jpg">
 
-			</div>
+				<div class="content-right">
+			
+					<p>Hi my name's Dan. I'm a <strong>Vancouver based front-end web developer</strong>. I recently completed the Technical Web Designer Program at the British Columbia Institute of Technology and now I'm on a search for work. If I'm not glued in front of a computer screen you might find me rock climbing in Squamish, hanging out with a demanding Australian Cattle Dog, learning Pink Floyd guitar solos, or slowly rebuilding my motorcycle...when I have time.</p>
+					
+					<h3>Skills</h3>
+					<ul>
+						<li>Languages
+							<ul class="child-list">
+								<li>HTML</li>
+								<li>CSS3</li>
+								<li>Javascript</li>
+								<li>jQuery</li>
+								<li>PHP</li>	
+							</ul>
+							</li>
+						<li>Adobe Suite
+							<ul class="child-list">
+								<li>Indesign</li>
+								<li>Photoshop</li>
+								<li>Illustrator</li>
+								<li>Lightroom</li>	
+							</ul>
+							</li>
+						<li>Other Skills
+							<ul class="child-list">
+								<li>Responsive Design</li>
+								<li>Gulp</li>
+								<li>SASS</li>
+								<li>SEO</li>
+								<li>Final Cut</li>	
+							</ul>
+							</li>
+					</ul>
+					<a class="btn-project" href="#">Request CV </a>
+				</div><!-- end of content right -->
+
+			</article>
 
 		</section><!-- end of about -->
 		

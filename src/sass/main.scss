@@ -9,7 +9,7 @@
 @import "_css3-mixins";
 @import "_align";
 
-/* ====================================================================================================================
+ /* ====================================================================================================================
  * GLOBAL STYLES
  * ====================================================================================================================*/
 
@@ -21,7 +21,7 @@
  * HEADER STYLES
  * ====================================================================================================================*/
 
- header {
+header {
  	background-color: #303435;
  	box-shadow: 2px 5px 10px #888888;
  	text-align: center;
@@ -29,45 +29,42 @@
 		h1 {
  			font-size: 10vw;
 		}
- 		h2 {
- 			font-size: 5vw;
- 			margin-top: -15px;
- 			
+ 		.sub-title {
+ 			font-size: 6vw;
+ 			font-weight: normal;
+ 			position: relative;
+ 			top: -30px;
  		}
- }
+ }		
 
 .main-navigation {
 	position: fixed;
-	z-index: 100;
+	z-index: 500;
 	top: 0;
-	right: 0;
+	left: 0;
 	width: 100%;
-	padding: 15px 1% 15px 3%;
 	background: #B6523F;
 	border-bottom: 1px solid #303435;
 	box-shadow: 0.1px 0.1px 10px black;
-
-		a {
-		   font-weight: bold;
-		   letter-spacing: 3px;
-		   padding: 5px;
-		}
 		ul {
 			display: flex;
-			aign-items: center;
-		}
-		li {
-			flex: 2;
+			align-items: baseline;
+			flex-wrap: wrap;
 		}
 		.menu-text {
-			font-size: 1.2em;
+			flex: 1 1 33.33333%;
+			line-height: 2.0em;
 		}
 		.social {
-			flex: 1;
+			flex: 1 1 25%;
+			font-size: 1.3em;
+			font-weight: lighter;
+			line-height: 2.0em;
 		}
+
 }
 
-@media #{$phone-down} {
+/*@media #{$phone-down} {
 .main-navigation {
 	padding: 7px 1% 3px 3%;
 		a {
@@ -79,13 +76,13 @@
 			flex-wrap: wrap;
 		}
 		li {
-			flex: 1 1 33.3333333;
+			flex: 1;
 		}
 		.menu-text {
 			font-size: 1.3em;
 		}
 		.social {
-			flex: 1 1 25%;
+			flex: 1 1 33%;
 			padding: 5px 0 7px 15px;
 			font-size: 1.2em;
 		}
@@ -102,14 +99,14 @@
  				text-align: center;
  			}
  	}
-}
+}*/
 
 
 /* ====================================================================================================================
  * MAIN CONTENT STYLES
  * ====================================================================================================================*/
 
-.main-content {
+.work-wrapper {
 	padding: 25px 2% 10px 2%;
 		h2{
 			font-size: 1.9em;
@@ -150,18 +147,43 @@
  * VIEW PROJECT PAGE
  * ====================================================================================================================*/
 
+.project-wrapper {
+	padding: 0 5%;
+			h2 {
+			font-size: 2.0em;
+			margin-top: 20px;
+			text-align: left;
+		}
+		p {
+			margin-top: 15px;
+			font-size: 1.3em;
+		}
+		.technical-elements {
+			font-size: 1.2em;
+			margin-top: 15px;
+		}
+		.technical-elements li {
+			background-color: rgba(0,0,0,0.1);
+			padding: 10px;
+			border-bottom: 1px solid rgba(0,0,0,0.5);
+		}
+		li:last-child {
+			border-bottom: none;
+		}
+}
+
 .project-header {
 	position: relative;
 		.computer {
 			position: relative; 
 			z-index: 10;
-			width: 100%
+			left: -5px;
 		}
 		.phone {
 			position: absolute;
 			z-index: 100;
 			bottom: 0;
-			left: 4%;
+			left: 5%;
 			width: 15%
 		}
 		.tablet {
@@ -173,26 +195,99 @@
 		}
 }
 
-.project-wrapper {
-	margin: 0 5% 0 5%;
-		h2 {
-			font-size: 2.0em;
-			margin-top: 20px;
-			text-align: left;
-		}
-		p {
-			margin-top: 15px;
-		}
-		ul {
-			font-size: 1.5em;
-			display: flex;
-			margin-top: 15px;
-		}
-		li {
-			background-color: grey;
-			padding: 10px;
+.details-header {
+		.btn-project {
+			font-size: 1.3em;
+			padding: 6px 10px;
 		}
 }
+
+.project-navigation {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 15px;
+			a {
+				color: black;
+				font-size: 1.25em;
+			}
+			.btn-left {
+				margin-left: -8px;
+			}
+			.btn-right {
+				margin-right: -8px;
+			}
+}
+
+.btn-left:after {
+	content: "last project";
+}
+
+.btn-right:before {
+	content: "next project";
+}
+
+ /* ====================================================================================================================
+ * 	BLOG PAGE
+ * ====================================================================================================================*/
+
+ .project-navigation {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 15px;
+			a {
+				color: black;
+				font-size: 1.25em;
+			}
+			.blog-left {
+				margin-left: -8px;
+			}
+			.blog-right {
+				margin-right: -8px;
+			}
+}
+
+.blog-left:after {
+	content: "LAST POST";
+}
+
+.blog-right:before {
+	content: "NEXT POST";
+}
+
+.blog-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+		.blog-post {
+			width: calc(100% / 3);
+		}
+}
+
+
+.image-series {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 10px;
+		figure {
+			margin-bottom: 10px;
+		}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

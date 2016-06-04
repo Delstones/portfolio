@@ -5,24 +5,19 @@
  * FONT-STYLES
  * ====================================================================================================================*/
 
-body {
-	font: normal 100% $lato;
-}
-p {
-    font-size: 1.5em;
+body  {
+	font: normal 100% $monty;
 }
 
-h3,
-h4 {
-	font: bold;
-}
-
-header{
-		h1, h2 {
-		font: bold 100% $header-font;
+header {
+    h1 {
+        font: bold 100% $header-font;
+        font-size: 1.5em;
         color: white;
-
-		}
+    }
+    .main-navigation {
+        font-weight: normal;
+    }
 }
 
 a {
@@ -47,7 +42,7 @@ a:hover {
     color: #ffff;
     background: #B6523F;
     border: 0;
-    border-radius: .5em;
+    border-radius: .3em;
     box-shadow: 0 0.125em 0 hsla(0,0%,0%,0.05);
     -webkit-transition-property: color,background,border-color,margin-top;
     -moz-transition-property: color,background,border-color,margin-top;

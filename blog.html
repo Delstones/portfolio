@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Dan Elstone - Blog</title>
+	<title>Dan Elstone - Front-End Developer</title>
 	<meta name="description" content="Dan Elstone - Front-End Developer Portfolio. Vancouver B.C">
 	<meta name="author" content="Daniel Elstone">
 
@@ -16,17 +16,18 @@
 
 	<!-- start of header -->
 	<header> 
-		<h1>DAN ELSTONE <br /><span class="subheading">Front-End Developer</span></h1>
+		<h1>DAN ELSTONE <br><span class="sub-title">Front-End Developer</span></h1>
 		
 		<!-- start of nav -->
-		<nav class ="main-navigation"> 
+		<nav class = "main-navigation"> 
 			<ul>
-				<li><a href='#'>Work</a></li>
-				<li><a href='#'>Blog</a></li>
-				<li><a href='#'>Contact</a></li>
-				<li><a href='#'><i class="icon-tumblr-squared"></i></a></li>
-				<li><a href='#'><i class="icon-linkedin-squared"></i></a></li>
-				<li><a href='#'><i class="icon-instagram-1"></i></a></li>
+				<li class="menu-text"><a href='index.html'>WORK</a></li>
+				<li class="menu-text"><a href='blog.html'>BLOG</a></li>
+				<li class="menu-text"><a href='about.html'>ABOUT</a></li>
+				<li class="social"><a href='https://twitter.com/DanElstone'><i class="icon-twitter-squared"></i></a></li>
+				<li class="social"><a href='https://ca.linkedin.com/in/dan-elstone'><i class="icon-linkedin-squared"></i></a></li>
+				<li class="social"><a href='https://www.instagram.com/delstone/'><i class="icon-instagram-1"></i></a></li>
+				<li class="social"><a href="mailto:daniel.elstone@gmail.com"><i class="icon-mail"></i></a> </li>
 			</ul>
 		</nav> 
 	</header> 
@@ -36,32 +37,27 @@
 	
 		<!-- start of blog -->
 		<section class="blog">
-			<!-- start of blog article -->
-			<div class="blog-post">
-				<figure>
- 					<a class="post-link" href="#"><img src="http://lorempixel.com/400/200/cats" alt="The Pulpit Rock and describe link"></a>
-				</figure>
-				<h2>More Northern Exposure Now! {April 15, 2016}</h2>
-				<p>Darren Burrows (Ed, from Northern Exposure), is trying to bring it back. Sometimes reunion shows are bogus, but he’s aware: So-called reunion shows can be hit and miss. While designed to please fans, they rarely tell a good story. You and I know a good story with complex characters sits at the heart of every […]</p>
-			</article>
+			<h2>Blog</h2>
 
-			<article class="blog-post">
-				<figure>
- 					<a class="post-link" href="#"><img src="http://lorempixel.com/400/200/cats" alt="The Pulpit Rock and describe link"></a>
-				</figure>
-				<h2>More Northern Exposure Now! {April 15, 2016}</h2>
-				<p>Darren Burrows (Ed, from Northern Exposure), is trying to bring it back. Sometimes reunion shows are bogus, but he’s aware: So-called reunion shows can be hit and miss. While designed to please fans, they rarely tell a good story. You and I know a good story with complex characters sits at the heart of every […]</p>
-			</article>
+			<div class="blog-wrapper">
+			
+				<!-- start of blog article -->
+				<article class="blog-post">
+					<figure>
+	 					<a class="post-link" href="#"><img src="images/blog/sanjuan/sanjuan-reservoir-thumbnail.jpg" alt="The Pulpit Rock and describe link"></a>
+					</figure>
+					<h3>San Juan Reservoir - California <time datetime="2016-06-03">{June 03, 2016}</time></h3>
+					<p>A series of photographs taken at the San Juan Resevoir in California</p>
+				</article>
 
-			<article class="blog-post">
-				<figure>
- 					<a class="post-link" href="#"><img src="http://lorempixel.com/400/200/cats" alt="The Pulpit Rock and describe link"></a>
-				</figure>
-				<h2>More Northern Exposure Now! {April 15, 2016}</h2>
-				<p>Darren Burrows (Ed, from Northern Exposure), is trying to bring it back. Sometimes reunion shows are bogus, but he’s aware: So-called reunion shows can be hit and miss. While designed to please fans, they rarely tell a good story. You and I know a good story with complex characters sits at the heart of every […]</p>
-			</article>
-				
-		</div> <!-- end of blog -->
+			</div><!-- end of blog wrapper -->
+
+		</section> <!-- end of blog -->
+
+		<nav class="project-navigation">
+			<a class="blog-left" href='#'><i class="icon-left-open"></i></a>
+			<a class="blog-right" href='#'><i class="icon-right-open"></i></a>
+		</nav>
 		
 	</main>
 
@@ -70,8 +66,8 @@
 <script>
 	$(window).load(function() {
   		$('.flexslider').flexslider({
-   	    animation: "slide"
-  		});
+    	slideshow: false
+    	});
 	});
 </script>
 </body>
