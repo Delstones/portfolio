@@ -15,11 +15,12 @@ $monty       : 'Montserrat', Arial, 'Helvetica Neue', Helvetica, sans-serif;
 $lato        : 'Lato', Arial, 'Helvetica Neue', Helvetica, sans-serif;
 
 
-
 // Colours
 $seafoam  		  : #90d5bf;
 $background-grey  : #bfc0bf;
 $slider-bottom    : #282828;
+$orangy           : #B6523F;
+$header-grey      : #303435;
 
 // Breakpoints
 $large: 960px;
@@ -28,7 +29,12 @@ $small: 480px;
 
 // Media Query Variable
 $desktop-up: "only screen and (max-width: 700px)";
-$phone-down: "only screen and (max-width: 380px)";
+$phone-up: "only screen and (min-width: 500px)";
+$eight-up:   "only screen and (min-width: 800px)";
+$max-width:   "only screen and (min-width: 1400px)";
+$six-sixty:   "only screen and (min-width: 660px)";
+$one-thousand:   "only screen and (min-width: 1000px)";
+$thirteen-thirty:   "only screen and (min-width: 1330px)";
 
 
 

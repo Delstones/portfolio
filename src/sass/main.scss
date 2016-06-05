@@ -16,24 +16,49 @@
  body {
  	background-color: rgba(0,0,0,0.1);
  }
+ 
+ @media #{$phone-up} {
+	.work-wrapper {
+		.title {
+			margin: 15px 0 25px 0;
+		}
+	}
 
- /* ====================================================================================================================
+}
+
+@media #{$eight-up} {
+	.main-content {
+		margin: 0 5% 40px 5%;
+	}
+ }	
+
+ @media #{$max-width} {
+ 	.main-content {
+ 		max-width: 1400px;
+ 		margin-left: auto;
+ 		margin-right: auto;
+ 	}
+}
+
+
+/* ====================================================================================================================
  * HEADER STYLES
  * ====================================================================================================================*/
 
 header {
- 	background-color: #303435;
+ 	background-color: $header-grey;
  	box-shadow: 2px 5px 10px #888888;
  	text-align: center;
- 	padding: 60px 0 10px 0;
+ 	padding: 50px 0 10px 0;
+ 	height: 180px;
 		h1 {
- 			font-size: 10vw;
+ 			font-size: 2.0em;
+ 			margin-bottom: -10px;
 		}
  		.sub-title {
- 			font-size: 6vw;
+ 			font-size: 1.2em;
  			font-weight: normal;
- 			position: relative;
- 			top: -30px;
+ 			margin-bottom: 10px;
  		}
  }		
 
@@ -43,7 +68,7 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: #B6523F;
+	background: $orangy;
 	border-bottom: 1px solid #303435;
 	box-shadow: 0.1px 0.1px 10px black;
 		ul {
@@ -53,102 +78,131 @@ header {
 		}
 		.menu-text {
 			flex: 1 1 33.33333%;
-			line-height: 2.0em;
+			line-height: 2.5em;
 		}
-		.social {
-			flex: 1 1 25%;
-			font-size: 1.3em;
-			font-weight: lighter;
-			line-height: 2.0em;
-		}
-
 }
 
-/*@media #{$phone-down} {
-.main-navigation {
-	padding: 7px 1% 3px 3%;
-		a {
-		   font-weight: bold;
-		   letter-spacing: 2px;
-		   padding: 5px;
+.social-nav {	
+	ul {
+		display: flex;
+	}
+	.social {
+		flex: 1 1 25%;
+		font-size: 2.0em;
+	}
+}
+
+/***** Media Queries for header *****/
+
+@media #{$phone-up} {
+	header {
+		height: 200px;
+ 		padding: 60px 0 10px 0;
+ 			h1 {
+ 				font-size: 2.5em;
+ 				margin-bottom: -12px;
+			}
+ 			.sub-title {
+ 				font-size: 1.6em;
+ 				font-weight: normal;
+ 				margin-bottom: 10px;
+ 			}
+ 			.menu-text {
+				font-size: 1.3em;
 		}
-		ul {
-			flex-wrap: wrap;
-		}
-		li {
-			flex: 1;
-		}
-		.menu-text {
-			font-size: 1.3em;
-		}
+ }		
+.social-nav {	
 		.social {
-			flex: 1 1 33%;
-			padding: 5px 0 7px 15px;
-			font-size: 1.2em;
+			font-size: 2.0em;
+			line-height: 1,8em;
+			margin: 6px 0;
 		}
 
 	}
-	header {
- 		padding: 75px 2% 2% 2%;
-			h1 {
- 				font-size: 13vw;
- 			}
- 			h2 {
- 				font-size: 5vw;
- 				margin-top: -15px;
- 				text-align: center;
- 			}
- 	}
-}*/
+}
 
+@media #{$eight-up} {
+header {
+ 	padding: 70px 0 10px 0;
+ 	height: 280px;
+		h1 {
+ 			font-size: 4.0em;
+ 			margin-bottom: -10px;
+		}
+ 		.sub-title {
+ 			font-size: 2.2em;
+ 			font-weight: normal;
+ 			margin-bottom: 10px;
+ 		}
+ 		.menu-text {
+				font-size: 1.6em;
+		}
+ }	
+
+.social-nav {	
+	ul {
+		display: flex;
+	}
+	.social {
+		flex: 1 1 25%;
+		font-size: 2.7em;
+		}
+
+	}
+}
 
 /* ====================================================================================================================
  * MAIN CONTENT STYLES
  * ====================================================================================================================*/
-
-.work-wrapper {
-	padding: 25px 2% 10px 2%;
-		h2{
-			font-size: 1.9em;
-			font-weight: bold;
-			margin-bottom: 5px;
-			margin: 0 0 5px 5px;
-			text-align: center;	
-			text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
-		}
-		h3{
-			font-size: 1.2em;
-			font-weight: normal;
-			margin: 0 0 10px 5px;
-			text-align: center;
-			}
-}
+ 
+ .main-content {
+ 	padding: 10px 2% 10px 2%;
+ }
 
 .work {
 	padding: 0px 2% 1px 2%;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	box-shadow: 2px 5px 10px #888888;
 	background-color: rgba(0,0,0,0.05);
 }
 
-.project-header {
+.slider-header {
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
 	margin-bottom: 5px;
-		button {
-			border-radius: 10px;
-
-
+		h3 {
+			flex: 2;
 		}
+		.btn-project {
+		    flex: 1.2;
+	}	
 }
+
+@media #{$phone-up} {
+	.main-content {
+ 		padding: 15px 2% 10px 2%;
+ 	}
+	.slider-header {
+		.smalltitle {
+			flex: 3;
+			font-size: 180%
+		}
+		.btn-project {
+		    flex: 1.2;
+		    font-size: 130%;
+		}
+	}
+
+}
+
 
  /* ====================================================================================================================
  * VIEW PROJECT PAGE
  * ====================================================================================================================*/
 
 .project-wrapper {
-	padding: 0 5%;
+	padding: 10px 2%;
 			h2 {
 			font-size: 2.0em;
 			margin-top: 20px;
@@ -198,7 +252,10 @@ header {
 .details-header {
 		.btn-project {
 			font-size: 1.3em;
-			padding: 6px 10px;
+			padding: 9px 15px;
+		}
+		h2 {
+			margin-bottom: 10px;
 		}
 }
 
@@ -226,24 +283,85 @@ header {
 	content: "next project";
 }
 
+@media #{$six-sixty} {
+	
+.project-header {
+		.computer {
+			left: 3%;
+		}
+		.phone {
+			left: 5%;
+			width: 100px;
+		}
+		.tablet {
+			right: 1%;
+			width: 200px;
+		}
+}
+
+}
+
+@media #{$eight-up} {
+	.project-header {
+		margin-top: 20px;
+		.computer {
+			left: 9%;
+		}
+		.phone {
+			left: 3%;
+			width: 100px;
+		}
+		.tablet {
+			right: -3%;
+			width: 200px;
+		}
+	}
+}
+
+@media #{$one-thousand} {
+	.project-header {
+		.computer {
+			left: 3%;
+		}
+		.phone {
+			left: 83%;
+			width: 100px;
+		}
+		.tablet {
+			right: 20%;
+			width: 200px;
+		}
+	}
+}
+
+@media #{$thirteen-thirty} {
+	.project-header {
+		position: static;
+		margin-left: 6%;
+		.computer {
+			position: static;
+		}
+		.phone {
+			position: static;
+		}
+		.tablet {
+			position: static;
+		}
+	}
+}
+
+
  /* ====================================================================================================================
  * 	BLOG PAGE
  * ====================================================================================================================*/
 
- .project-navigation {
-		display: flex;
-		justify-content: space-between;
-		margin-top: 15px;
-			a {
-				color: black;
-				font-size: 1.25em;
-			}
-			.blog-left {
-				margin-left: -8px;
-			}
-			.blog-right {
-				margin-right: -8px;
-			}
+.blog {
+	margin: 0 2%;
+		.blog-post {
+			display: flex;
+			flex-direction: column;	
+			align-items: center;
+		}
 }
 
 .blog-left:after {
@@ -254,16 +372,6 @@ header {
 	content: "NEXT POST";
 }
 
-.blog-wrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-		.blog-post {
-			width: calc(100% / 3);
-		}
-}
-
-
 .image-series {
 	display: flex;
 	flex-direction: column;
@@ -272,27 +380,86 @@ header {
 		figure {
 			margin-bottom: 10px;
 		}
+		p {
+			margin: 5px 0 15px 0;
+		}
 }
 
+.blog-post {
+	figure {
+		margin-bottom: 5px;
+	}
+	h3 {
+		margin-bottom: 5px;
+		color: black;
+	}
+	p {
+		font-weight: light;
+	}
+}
 
+@media #{$six-sixty} {
+	
+	.blog-wrapper {
+		margin: 0 20%;
+	}
 
+}
 
+/* ====================================================================================================================
+* 	ABOUT PAGE
+* ==================================================================================================================== */
 
+.about
 
+.about-content {
+	margin: 10px 2% 0 2%;
+		h3 {
+			margin: 10px 0 5px 0;
+			border-bottom: 2px solid black;
+		}
+		ul {
+			font-weight: bold;
+			margin: 10px 0 10px 0;
+		}
+		.child-list {
+			font-weight: normal;
+			list-style-type: circle;
+			margin: 5px 0 5px 40px;
+		}
+		.btn-project {
+			width: 50%;
+			float: left;
+		}
+	}
 
+@media #{$eight-up} {
+	.about img {
+		float: left;
+		width: 38%;
+		margin: 20px 10px 0 0;
+	}
+	.about-content {
+		float: left;
+		width: 55%;
+		padding-top: 20px;
+	}
+	.btn-project {
+		width: 75%;
+		float: left;
+	}
 
+}
 
+@media #{$one-thousand} {
+	.about img {
+		width: 34%;
+	}
+	.about-content {
+		float: left;
+		width: 59%;
+		padding-top: 20px;
+	}
 
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
