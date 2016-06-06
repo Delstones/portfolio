@@ -97,7 +97,7 @@ body{background-color:rgba(0,0,0,.1)}
 }
 @media only screen and (min-width:800px){.main-content{margin:0 5% 40px}
 }
-@media only screen and (min-width:1400px){.main-content{max-width:1400px;margin-left:auto;margin-right:auto}
+@media only screen and (min-width:1200px){.main-content{max-width:1200px;margin-left:auto;margin-right:auto}
 }
 header{background-color:#303435;box-shadow:2px 5px 10px #888;padding:50px 0 10px;height:180px}
 header h1{font-size:2em;margin-bottom:-10px}
@@ -128,6 +128,10 @@ header .menu-text{font-size:1.6em}
 @media only screen and (min-width:500px){.main-content{padding:15px 2% 10px}
 .slider-header .smalltitle{-ms-flex:3;flex:3;font-size:180%}
 .slider-header .btn-project{-ms-flex:1.2;flex:1.2;font-size:130%}
+}
+@media only screen and (min-width:800px){.secondary-slider{display:-ms-flexbox;display:flex}
+.secondary-slider .slider-header .smalltitle{-ms-flex:1 1 60%;flex:1 1 60%;font-size:120%}
+.secondary-slider .slider-header .btn-project{-ms-flex:1 1 40%;flex:1 1 40%;font-size:100%}
 }
 .project-wrapper{padding:10px 2%}
 .project-wrapper h2{font-size:2em;margin-top:20px;text-align:left}
@@ -175,14 +179,16 @@ header .menu-text{font-size:1.6em}
 .blog-post p{font-weight:light}
 @media only screen and (min-width:660px){.blog-wrapper{margin:0 20%}
 }
-.about .about-content{margin:10px 2% 0}
-.about .about-content h3{margin:10px 0 5px;border-bottom:2px solid #000}
-.about .about-content ul{font-weight:700;margin:10px 0}
-.about .about-content .child-list{font-weight:400;list-style-type:circle;margin:5px 0 5px 40px}
-.about .about-content .btn-project{width:50%;float:left}
+@media only screen and (min-width:800px){.blog-wrapper{margin:0 34%}
+}
+.about-content{margin:10px 2% 0}
+.about-content h3{margin:10px 0 5px;border-bottom:2px solid #000}
+.about-content ul{font-weight:700;margin:10px 0}
+.about-content .child-list{font-weight:400;list-style-type:circle;margin:5px 0 5px 40px}
+.about-content .btn-project{width:50%;float:left}
 @media only screen and (min-width:800px){.about img{float:left;width:38%;margin:20px 10px 0 0}
-.about-content{float:left;width:55%;padding-top:20px}
-.btn-project{width:75%;float:left}
+.about .about-content{float:left;width:55%;padding-top:20px}
+.about .btn-project{width:75%;float:left}
 }
 @media only screen and (min-width:1000px){.about img{width:34%}
 .about-content{float:left;width:59%;padding-top:20px}

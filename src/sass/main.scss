@@ -34,7 +34,7 @@
 
  @media #{$max-width} {
  	.main-content {
- 		max-width: 1400px;
+ 		max-width: 1200px;
  		margin-left: auto;
  		margin-right: auto;
  	}
@@ -193,6 +193,25 @@ header {
 		    font-size: 130%;
 		}
 	}
+}
+
+@media #{$eight-up} {
+	.secondary-slider {
+		display: flex;
+			.slider-header {
+				.smalltitle {
+					flex: 1 1 60%;
+					font-size: 120%
+		}
+		.btn-project {
+		    flex: 1 1 40%;
+		    font-size: 100%;
+		}
+	}
+
+
+
+	}
 
 }
 
@@ -297,8 +316,7 @@ header {
 			right: 1%;
 			width: 200px;
 		}
-}
-
+	}
 }
 
 @media #{$eight-up} {
@@ -406,11 +424,17 @@ header {
 
 }
 
+@media #{$eight-up} {
+	
+	.blog-wrapper {
+		margin: 0 34%;
+	}
+
+}
+
 /* ====================================================================================================================
 * 	ABOUT PAGE
 * ==================================================================================================================== */
-
-.about
 
 .about-content {
 	margin: 10px 2% 0 2%;
@@ -434,7 +458,8 @@ header {
 	}
 
 @media #{$eight-up} {
-	.about img {
+	.about {
+	 img {
 		float: left;
 		width: 38%;
 		margin: 20px 10px 0 0;
@@ -448,6 +473,8 @@ header {
 		width: 75%;
 		float: left;
 	}
+
+}
 
 }
 
