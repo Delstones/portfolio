@@ -6,7 +6,7 @@
 	<meta name="description" content="Dan Elstone - Front-End Developer Portfolio. Vancouver B.C">
 	<meta name="author" content="Daniel Elstone">
 
-	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="dist/css/main.css">
 	<link rel="shortcut icon" href="favicon.ico">
@@ -23,7 +23,7 @@
 		<nav class = "main-navigation"> 
 			<ul>
 				<li class="menu-text"><a href='index.html'>WORK</a></li>
-				<li class="menu-text"><a href='blog.html'>BLOG</a></li>
+				<li class="menu-text"><a class="active" href='blog.html'>BLOG</a></li>
 				<li class="menu-text"><a href='about.html'>ABOUT</a></li>
 			</ul>
 		</nav> 
@@ -45,10 +45,11 @@
 		<section class="blog-single">
 			
 			<div class="blog-single-wrapper">
-				<!-- start of blog article -->
-				<article class="image-series">
 					<h2 class="title">San Luis Reservoir - California</h2>
 					<p>These images were taken on the way down to Los Angeles from Vancouver. We had driven about 17 hours straight into the night stumbling upon this campground off the I-5. It's always strange seeing showing up to places in the middle of the night and having no perspective of the surroundings and then waking up, for better or for worse, to whatever the landscape has to offer. Luckily for us we woke up to a beautiful quiet December morning in a warm California haze and I was able to capture these images. </p>
+				<!-- start of blog article -->
+				<article class="image-series">
+				
 					<figure>
 	 					<img src="images/blog/sanjuan/sanjuan-reservoir-1.jpg"</a>
 					</figure>
@@ -81,23 +82,17 @@
 			</div><!-- end of blog wrapper -->
 
 		</section> <!-- end of blog -->
-
-		<nav class="project-navigation">
+		
+		<!-- for later use -->
+		<!-- <nav class="project-navigation">
 			<a class="blog-left" href='#'><i class="icon-left-open"></i></a>
 			<a class="blog-right" href='#'><i class="icon-right-open"></i></a>
-		</nav>
+		</nav> -->
 		
 	</main>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-<script type="text/javascript" src="src/scripts/jquery.flexslider-min.js"></script> 
-<script>
-	$(window).load(function() {
-  		$('.flexslider').flexslider({
-    	slideshow: false
-    	});
-	});
-</script>
+
 </body>
 </html>
 	

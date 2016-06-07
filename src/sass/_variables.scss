@@ -2,18 +2,11 @@
 // =================
 
 //FONTS
-@import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
-
-
-$header-font : 'Nunito', Arial, 'Helvetica Neue', Helvetica, sans-serif;
 $body-font   : 'Roboto', Arial, 'Helvetica Neue', Helvetica, sans-serif;
-$monty       : 'Montserrat', Arial, 'Helvetica Neue', Helvetica, sans-serif;
-$lato        : 'Lato', Arial, 'Helvetica Neue', Helvetica, sans-serif;
-
+$varela      : 'Varela Round', sans-serif;
 
 // Colours
 $seafoam  		  : #90d5bf;
@@ -38,10 +31,6 @@ $thirteen-thirty:   "only screen and (min-width: 1330px)";
 
 
 
-
-//		@media #{$tablet-up} {
- // 	background-color: blue;
-//		}
 
 
 

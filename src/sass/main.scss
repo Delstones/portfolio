@@ -17,15 +17,6 @@
  	background-color: rgba(0,0,0,0.1);
  }
  
- @media #{$phone-up} {
-	.work-wrapper {
-		.title {
-			margin: 15px 0 25px 0;
-		}
-	}
-
-}
-
 @media #{$eight-up} {
 	.main-content {
 		margin: 0 5% 40px 5%;
@@ -34,12 +25,14 @@
 
  @media #{$max-width} {
  	.main-content {
- 		max-width: 1100px;
+ 		max-width: 1200px;
  		margin-left: auto;
  		margin-right: auto;
  	}
+ 	.work-wrapper {
+ 		margin: 0 140px;
+ 	}
 }
-
 
 /* ====================================================================================================================
  * HEADER STYLES
@@ -49,16 +42,16 @@ header {
  	background-color: $header-grey;
  	box-shadow: 2px 5px 10px #888888;
  	text-align: center;
- 	padding: 50px 0 10px 0;
- 	height: 180px;
+ 	padding: 55px 0 10px 0;
+ 	height: 160px;
 		h1 {
  			font-size: 2.0em;
  			margin-bottom: -10px;
 		}
  		.sub-title {
- 			font-size: 1.2em;
+ 			font-size: 1.0em;
  			font-weight: normal;
- 			margin-bottom: 10px;
+ 			margin: 5px 0 10px 0;
  		}
  }		
 
@@ -80,6 +73,9 @@ header {
 			flex: 1 1 33.33333%;
 			line-height: 2.5em;
 		}
+		.active {
+			color: $seafoam;
+		}
 }
 
 .social-nav {	
@@ -88,22 +84,20 @@ header {
 	}
 	.social {
 		flex: 1 1 25%;
-		font-size: 2.0em;
+		font-size: 150%;
 	}
 }
 
-/***** Media Queries for header *****/
-
 @media #{$phone-up} {
 	header {
-		height: 200px;
+		height: 195px;
  		padding: 60px 0 10px 0;
  			h1 {
  				font-size: 2.5em;
  				margin-bottom: -12px;
 			}
  			.sub-title {
- 				font-size: 1.6em;
+ 				font-size: 1.4em;
  				font-weight: normal;
  				margin-bottom: 10px;
  			}
@@ -111,20 +105,19 @@ header {
 				font-size: 1.3em;
 		}
  }		
+
 .social-nav {	
 		.social {
-			font-size: 2.0em;
-			line-height: 1,8em;
-			margin: 6px 0;
-		}
-
+			font-size: 170%;
+			margin-top: 5px;
+			}
 	}
 }
 
 @media #{$eight-up} {
 header {
  	padding: 70px 0 10px 0;
- 	height: 280px;
+ 	height: 265px;
 		h1 {
  			font-size: 4.0em;
  			margin-bottom: -10px;
@@ -138,14 +131,13 @@ header {
 				font-size: 1.6em;
 		}
  }	
-
 .social-nav {	
 	ul {
 		display: flex;
 	}
 	.social {
 		flex: 1 1 25%;
-		font-size: 2.7em;
+		font-size: 200%;
 		}
 
 	}
@@ -156,7 +148,7 @@ header {
  * ====================================================================================================================*/
  
  .main-content {
- 	padding: 10px 2% 10px 2%;
+ 	padding: 10px 2% 20px 2%;
  }
 
 .work {
@@ -206,17 +198,12 @@ header {
 		.btn-project {
 		    flex: 1 1 40%;
 		    font-size: 100%;
+			}
 		}
 	}
-
-
-
-	}
-
 }
 
-
- /* ====================================================================================================================
+/* ====================================================================================================================
  * VIEW PROJECT PAGE
  * ====================================================================================================================*/
 
@@ -404,37 +391,56 @@ header {
 }
 
 .blog-post {
-	figure {
+	padding: 10px;
+	box-shadow: 2px 5px 10px #888888;
+		figure {
 		margin-bottom: 5px;
-	}
-	h3 {
+		}
+		figure:hover {
+			opacity: 0.8;
+		}
+		h3:hover {
+			color: rgba(0,0,0,0.6);
+		}
+		h3 {
 		margin-bottom: 5px;
 		color: black;
-	}
-	p {
+		}
+		p {
 		font-weight: light;
+		margin-left: 10px;
+		}
+		.smalltitle {
+			font-size: 150%;
+		}
+}
+.blog-single-wrapper {
+	p {
+		margin-bottom: 35px;
 	}
 }
 
 @media #{$six-sixty} {
-	
 	.blog-wrapper {
-		margin: 0 20%;
+		margin: 0 30%;
 	}
-
 }
 
 @media #{$eight-up} {
-	
-	.blog-wrapper {
-		margin: 0 34%;
-	}
+	.image-series {
+		margin: 0 20%;
 
+	}
 }
+
 
 /* ====================================================================================================================
 * 	ABOUT PAGE
 * ==================================================================================================================== */
+
+.about {
+	overflow: auto;
+}
 
 .about-content {
 	margin: 10px 2% 0 2%;
@@ -444,7 +450,10 @@ header {
 		}
 		ul {
 			font-weight: bold;
-			margin: 10px 0 10px 0;
+			margin: 10px 0 10px 0;		
+		}
+		.bold{
+			font-size: 120%;
 		}
 		.child-list {
 			font-weight: normal;
@@ -453,6 +462,7 @@ header {
 		}
 		.btn-project {
 			width: 50%;
+			font-size: 130%;
 			float: left;
 		}
 	}
@@ -472,10 +482,8 @@ header {
 	.btn-project {
 		width: 75%;
 		float: left;
+		}
 	}
-
-}
-
 }
 
 @media #{$one-thousand} {
