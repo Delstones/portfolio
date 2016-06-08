@@ -16,10 +16,20 @@
  body {
  	background-color: rgba(0,0,0,0.1);
  }
+
+ .main-content {
+ 	padding: 20px 2% 20px 2%;
+ }
+
+@media #{$phone-up} {
+	.main-content {
+		padding: 50px 2% 20px 2%;
+	}
+ }	
  
 @media #{$eight-up} {
 	.main-content {
-		margin: 0 5% 40px 5%;
+		margin: 10px 10% 40px 5%;
 	}
  }	
 
@@ -78,7 +88,8 @@ header {
 		}
 }
 
-.social-nav {	
+.social-nav {
+	margin: 0 25%;	
 	ul {
 		display: flex;
 	}
@@ -103,7 +114,10 @@ header {
  			}
  			.menu-text {
 				font-size: 1.3em;
-		}
+			}
+			.social-nav {
+				margin: 0 30%;
+			}
  }		
 
 .social-nav {	
@@ -116,7 +130,7 @@ header {
 
 @media #{$eight-up} {
 header {
- 	padding: 70px 0 10px 0;
+ 	padding: 75px 0 10px 0;
  	height: 265px;
 		h1 {
  			font-size: 4.0em;
@@ -143,14 +157,21 @@ header {
 	}
 }
 
+@media #{$one-thousand} {
+	header {
+	.social-nav {
+		margin: 0 38%;
+			.social {
+			font-size: 220%;
+			}
+		}
+	}
+}
+
 /* ====================================================================================================================
  * MAIN CONTENT STYLES
  * ====================================================================================================================*/
  
- .main-content {
- 	padding: 10px 2% 20px 2%;
- }
-
 .work {
 	padding: 0px 2% 1px 2%;
 	margin-bottom: 20px;
@@ -172,9 +193,6 @@ header {
 }
 
 @media #{$phone-up} {
-	.main-content {
- 		padding: 15px 2% 10px 2%;
- 	}
 	.slider-header {
 		.smalltitle {
 			flex: 3;
@@ -190,14 +208,24 @@ header {
 @media #{$eight-up} {
 	.secondary-slider {
 		display: flex;
+			.workslider-small {
+				flex-basis: 50%;
+			}
+			.work {
+	padding: 0px 2% 1px 2%;
+	margin-bottom: 20px;
+	box-shadow: 2px 5px 10px #888888;
+	background-color: rgba(0,0,0,0.05);
+}
+			
 			.slider-header {
 				.smalltitle {
 					flex: 1 1 60%;
 					font-size: 120%
-		}
-		.btn-project {
-		    flex: 1 1 40%;
-		    font-size: 100%;
+				}
+			.btn-project {
+		    	flex: 1 1 40%;
+		    	font-size: 100%;
 			}
 		}
 	}

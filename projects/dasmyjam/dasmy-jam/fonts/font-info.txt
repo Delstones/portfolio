@@ -1,0 +1,15 @@
+Dasmy Jam - Font Info
+
+-----------------------------------------------
+
+Title, Navigation and Body font:
+
+Century Gothic
+
+Font Stack: 
+
+font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+
+-----------------------------------------------
+
+

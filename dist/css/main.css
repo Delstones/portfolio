@@ -59,12 +59,12 @@ html[xmlns] .flexslider .slides{display:block}
 }
 body{font:400 100% Roboto,Arial,"Helvetica Neue",Helvetica,sans-serif}
 body a:active,body a:focus,body a:hover{color:#90d5bf}
-.main-content p{font-size:130%}
+.main-content p{font-size:120%}
 .main-content ol,.main-content ul{font-size:100%}
 header .main-navigation,header h1{font:400 100% "Varela Round",sans-serif;letter-spacing:3px}
 header h1{color:#fff;text-shadow:1px 1px 1px rgba(0,0,0,.5)}
 a{transition:color .3s linear;color:#fff;text-decoration:none}
-.title{font-size:2.2em;font-weight:700;margin:0 0 5px;text-shadow:1px 1px 1px rgba(0,0,0,.2)}
+.title{font-size:2.2em;font-weight:700;margin:0 0 10px;text-shadow:1px 1px 1px rgba(0,0,0,.2)}
 .smalltitle{font-size:1.2em;font-weight:700}
 .btn-project{margin:1em 0 0;padding:5px 10px;line-height:2.3em;font-size:1em;color:#ffff;background:#B6523F;border:0;border-radius:.3em;box-shadow:0 .125em 0 rgba(0,0,0,.05);transition-property:color,background,border-color,margin-top}
 @font-face{font-family:fontello;src:url(../../font/fontello.eot?81154746);src:url(../../font/fontello.eot?81154746#iefix) format("embedded-opentype"),url(../../font/fontello.svg?81154746#fontello) format("svg");font-weight:400;font-style:normal}
@@ -89,7 +89,10 @@ a{transition:color .3s linear;color:#fff;text-decoration:none}
 .alignright{display:inline;float:right;margin-left:1.5em}
 .aligncenter{clear:both;display:block;margin-left:auto;margin-right:auto}
 body{background-color:rgba(0,0,0,.1)}
-@media only screen and (min-width:800px){.main-content{margin:0 5% 40px}
+.main-content{padding:20px 2%}
+@media only screen and (min-width:500px){.main-content{padding:50px 2% 20px}
+}
+@media only screen and (min-width:800px){.main-content{margin:10px 10% 40px 5%}
 }
 @media only screen and (min-width:1200px){.main-content{max-width:1200px;margin-left:auto;margin-right:auto}
 .work-wrapper{margin:0 140px}
@@ -102,31 +105,36 @@ header .sub-title{font-size:1em;font-weight:400;margin:5px 0 10px}
 .main-navigation ul{display:-ms-flexbox;display:flex;-ms-flex-align:baseline;align-items:baseline;-ms-flex-wrap:wrap;flex-wrap:wrap}
 .main-navigation .menu-text{-ms-flex:1 1 33.33333%;flex:1 1 33.33333%;line-height:2.5em}
 .main-navigation .active{color:#90d5bf}
+.social-nav{margin:0 25%}
 .social-nav ul{display:-ms-flexbox;display:flex}
 .social-nav .social{-ms-flex:1 1 25%;flex:1 1 25%;font-size:150%}
 @media only screen and (min-width:500px){header{height:195px;padding:60px 0 10px}
 header h1{font-size:2.5em;margin-bottom:-12px}
 header .sub-title{font-size:1.4em;font-weight:400;margin-bottom:10px}
 header .menu-text{font-size:1.3em}
+header .social-nav{margin:0 30%}
 .social-nav .social{font-size:170%;margin-top:5px}
 }
-@media only screen and (min-width:800px){header{padding:70px 0 10px;height:265px}
+@media only screen and (min-width:800px){header{padding:75px 0 10px;height:265px}
 header h1{font-size:4em;margin-bottom:-10px}
 header .sub-title{font-size:2.2em;font-weight:400;margin-bottom:10px}
 header .menu-text{font-size:1.6em}
 .social-nav ul{display:-ms-flexbox;display:flex}
 .social-nav .social{-ms-flex:1 1 25%;flex:1 1 25%;font-size:200%}
 }
-.main-content{padding:10px 2% 20px}
+@media only screen and (min-width:1000px){header .social-nav{margin:0 38%}
+header .social-nav .social{font-size:220%}
+}
 .work{padding:0 2% 1px;margin-bottom:20px;background-color:rgba(0,0,0,.05)}
 .slider-header{display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-align:baseline;align-items:baseline;margin-bottom:5px}
 .slider-header h3{-ms-flex:2;flex:2}
 .slider-header .btn-project{-ms-flex:1.2;flex:1.2}
-@media only screen and (min-width:500px){.main-content{padding:15px 2% 10px}
-.slider-header .smalltitle{-ms-flex:3;flex:3;font-size:180%}
+@media only screen and (min-width:500px){.slider-header .smalltitle{-ms-flex:3;flex:3;font-size:180%}
 .slider-header .btn-project{-ms-flex:1.2;flex:1.2;font-size:130%}
 }
 @media only screen and (min-width:800px){.secondary-slider{display:-ms-flexbox;display:flex}
+.secondary-slider .workslider-small{-ms-flex-preferred-size:50%;flex-basis:50%}
+.secondary-slider .work{padding:0 2% 1px;margin-bottom:20px;box-shadow:2px 5px 10px #888;background-color:rgba(0,0,0,.05)}
 .secondary-slider .slider-header .smalltitle{-ms-flex:1 1 60%;flex:1 1 60%;font-size:120%}
 .secondary-slider .slider-header .btn-project{-ms-flex:1 1 40%;flex:1 1 40%;font-size:100%}
 }
